@@ -4,7 +4,7 @@
 %global crate rtrtr
 
 Name:           rust-rtrtr
-Version:        0.3.2
+Version:        0.3.1
 Release:        %autorelease
 Summary:        Versatile tool for managing route filters
 
@@ -71,30 +71,6 @@ This package contains library source intended for building other packages which
 use the "arbitrary" feature of the "%{crate}" crate.
 
 %files       -n %{name}+arbitrary-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+native-tls-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+native-tls-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "native-tls" feature of the "%{crate}" crate.
-
-%files       -n %{name}+native-tls-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+native-tls-vendored-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+native-tls-vendored-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "native-tls-vendored" feature of the "%{crate}" crate.
-
-%files       -n %{name}+native-tls-vendored-devel
 %ghost %{crate_instdir}/Cargo.toml
 
 %package     -n %{name}+socks-devel
