@@ -45,6 +45,7 @@ License:        Apache-2.0 AND ISC AND (MIT OR Apache-2.0) AND (Apache-2.0 OR BS
 %doc Changelog.md
 %doc README.md
 %{_bindir}/rtrtr
+%doc %{_mandir}/man1/%{crate}.1*
 
 %package        devel
 Summary:        %{summary}
@@ -111,6 +112,8 @@ use the "socks" feature of the "%{crate}" crate.
 
 %install
 %cargo_install
+mkdir -p %{buildroot}%{_mandir}/man1
+install -p -m 0644 doc/%{crate}.1 %{buildroot}%{_mandir}/man1
 
 %if %{with check}
 %check
