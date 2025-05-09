@@ -21,8 +21,20 @@ A versatile tool for managing route filters.}
 
 %package     -n %{crate}
 Summary:        %{summary}
-# FIXME: paste output of %%cargo_license_summary here
-License:        # FIXME
+# Apache-2.0
+# Apache-2.0 AND ISC AND (MIT OR Apache-2.0)
+# Apache-2.0 OR BSL-1.0
+# Apache-2.0 OR ISC OR MIT
+# Apache-2.0 OR MIT # (dup L2)
+# BSD-2-Clause OR Apache-2.0 OR MIT
+# BSD-3-Clause
+# ISC
+# MIT
+# MIT OR Apache-2.0 # (dup L2)
+# MPL-2.0
+# Unicode-3.0
+# Unlicense OR MIT
+License:        Apache-2.0 AND ISC AND (MIT OR Apache-2.0) AND (Apache-2.0 OR BSL-1.0) AND (Apache-2.0 OR ISC OR MIT) AND (BSD-2-Clause OR Apache-2.0 OR MIT) AND BSD-3-Clause AND MIT AND MPL-2.0 AND Unicode-3.0 AND (Unlicense OR MIT)
 # LICENSE.dependencies contains a full license breakdown
 
 %description -n %{crate} %{_description}
